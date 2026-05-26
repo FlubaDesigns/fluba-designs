@@ -1,0 +1,10 @@
+HARNESS SPEC PACKET (for Grok)
+- CONTROL_TOWER_KNOBS.md: defines top 20 knobs + AI‑COMMS add-ons
+- HARNESS_ARCHITECTURE_BUILD_SPEC.md: authoritative wiring rules
+- PROD_ACCEPTANCE_CHECKLIST.md: what 'production-ready' means
+
+Key invariants:
+- Planes unplug-safe (HARNESS_MODE local|brain)
+- Fluba talks only to Brain
+- Brain calls Conscience (Guardrails) before any execution
+- No bypass paths
